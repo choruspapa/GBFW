@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net" default-lazy-init="true">
+  <object id="LoginService" type="Spring.Web.Services.WebServiceProxyFactory, Spring.Services">
+    <property name="ServiceUri" value="${url}/LoginWebService.asmx"/>
+    <property name="ServiceInterface" value="Eland.GBFW.UserMng.Service.ILoginService, Eland.GBFW.UserMng.Core"/>
+  </object>
+  <object id="UserMngService" type="Spring.Web.Services.WebServiceProxyFactory, Spring.Services">
+    <property name="ServiceUri" value="${url}/UserMngWebService.asmx"/>
+    <property name="ServiceInterface" value="Eland.GBFW.UserMng.Service.IUserMngService, Eland.GBFW.UserMng.Core"/>
+  </object>
+</objects>

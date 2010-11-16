@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net" default-lazy-init="true">
+  <object id="OperationMngService" type="Spring.Web.Services.WebServiceProxyFactory, Spring.Services">
+    <property name="ServiceUri" value="${url}/OperationMngWebService.asmx"/>
+    <property name="ServiceInterface" value="Eland.GBFW.ProgramMng.Service.IOperationMngService, Eland.GBFW.ProgramMng.Core"/>
+  </object>
+  <object id="ProgramMngService" type="Spring.Web.Services.WebServiceProxyFactory, Spring.Services">
+    <property name="ServiceUri" value="${url}/ProgramMngWebService.asmx"/>
+    <property name="ServiceInterface" value="Eland.GBFW.ProgramMng.Service.IProgramMngService, Eland.GBFW.ProgramMng.Core"/>
+  </object>
+</objects>

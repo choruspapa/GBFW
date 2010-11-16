@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+  <Skins>
+    <Skin Name="GoldenrodSoft">
+      <Styles>
+        <Style Name="Formular.Win.UI.Controls.FSharpGroupBox" >
+          <Properties>
+            <Property Name="BackColor" Value="Transparent" />
+          </Properties>
+        </Style>
+        <Style Name="Formular.Win.UI.Controls.FSharpComboBox" >
+          <Properties>
+            <Property Name="BackColor" Value="White" />
+            <Property Name="BackColorGradient" Value="PaleGoldenrod" />
+          </Properties>
+        </Style>
+        <Style Name="Formular.Win.UI.Controls.FSharpButton" >
+          <Properties>
+            <Property Name="ButtonColor" Value="LightGoldenrodYellow" />
+            <Property Name="ButtonColorGradient" Value="PaleGoldenrod" />
+            <Property Name="BorderColor" Value="Gray" />
+            <Property Name="BorderColorGradient" Value="Gray" />
+            <Property Name="InnerColor" Value="White" />
+          </Properties>
+        </Style>
+        <Style Name="Formular.Win.UI.Controls.FSharpTextBox" >
+          <Properties>
+            <Property Name="BorderColor" Value="White" />
+            <Property Name="BorderColorGradient" Value="PaleGoldenrod" />
+          </Properties>
+        </Style>
+        <Style Name="Formular.Win.UI.Controls.FSharpCheckBox" >
+          <Properties>
+            <Property Name="BorderColor" Value="Gray" />
+            <Property Name="BorderColorGradient" Value="White" />
+            <Property Name="CheckedColor" Value="PaleGoldenrod" />
+            <Property Name="CheckedColorGradient" Value="Goldenrod" />
+            <Property Name="InnerColor" Value="Silver" />
+          </Properties>
+        </Style>
+        <Style Name="Formular.Win.UI.Controls.FSharpRadioButton" >
+          <Properties>
+            <Property Name="BorderColor" Value="Gray" />
+            <Property Name="BorderColorGradient" Value="White" />
+            <Property Name="CheckedColor" Value="PaleGoldenrod" />
+            <Property Name="CheckedColorGradient" Value="Goldenrod" />
+            <Property Name="InnerColor" Value="Silver" />
+          </Properties>
+        </Style>
+      </Styles>
+    </Skin>
+    
+    <Skin Name="SolidBlue">
+      <Styles>
+        <Style Name="Formular.Win.UI.Controls.FSharpComboBox" >
+          <Properties>
+            <Property Name="BackColor" Value="DeepSkyBlue" />
+            <Property Name="BorderColor" Value="DarkGray" />
+          </Properties>
+        </Style>
+        <Style Name="Formular.Win.UI.Controls.FSharpButton" >
+          <Properties>
+            <Property Name="ButtonColor" Value="DeepSkyBlue" />
+            <Property Name="BorderColor" Value="DarkGray" />
+            <Property Name="InnerColor" Value="White" />
+          </Properties>
+        </Style>
+        <Style Name="Formular.Win.UI.Controls.FSharpTextBox" >
+          <Properties>
+            <Property Name="BorderColor" Value="LightBlue" />
+          </Properties>
+        </Style>
+        <Style Name="Formular.Win.UI.Controls.FSharpCheckBox" >
+          <Properties>
+            <Property Name="BorderColor" Value="Gray" />
+            <Property Name="CheckedColor" Value="Blue" />
+            <Property Name="InnerColor" Value="Silver" />
+          </Properties>
+        </Style>
+        <Style Name="Formular.Win.UI.Controls.FSharpRadioButton" >
+          <Properties>
+            <Property Name="BorderColor" Value="Gray" />
+            <Property Name="CheckedColor" Value="Blue" />
+            <Property Name="InnerColor" Value="Silver" />
+          </Properties>
+        </Style>
+      </Styles>
+    </Skin>
+  </Skins>
+  <Skins>
+
+    <Skin Name="SoftBlue">
+      <Styles>
+        <Style Name="Formular.Win.UI.Controls.FSharpComboBox" >
+          <Properties>
+            <Property Name="BackColor" Value="DeepSkyBlue" />
+            <Property Name="BackColorGradient" Value="LightBlue" />
+          </Properties>
+        </Style>
+        <Style Name="Formular.Win.UI.Controls.FSharpButton" >
+          <Properties>
+            <Property Name="ButtonColor" Value="AliceBlue" />
+            <Property Name="ButtonColorGradient" Value="DeepSkyBlue" />
+            <Property Name="BorderColor" Value="DarkGray" />
+            <Property Name="BorderColorGradient" Value="Gray" />
+            <Property Name="InnerColor" Value="White" />
+          </Properties>
+        </Style>
+        <Style Name="Formular.Win.UI.Controls.FSharpTextBox" >
+          <Properties>
+            <Property Name="BorderColor" Value="Blue" />
+            <Property Name="BorderColorGradient" Value="LightBlue" />
+          </Properties>
+        </Style>
+        <Style Name="Formular.Win.UI.Controls.FSharpCheckBox" >
+          <Properties>
+            <Property Name="BorderColor" Value="Gray" />
+            <Property Name="BorderColorGradient" Value="White" />
+            <Property Name="CheckedColor" Value="Cyan" />
+            <Property Name="CheckedColorGradient" Value="Blue" />
+            <Property Name="InnerColor" Value="Silver" />
+          </Properties>
+        </Style>
+        <Style Name="Formular.Win.UI.Controls.FSharpRadioButton" >
+          <Properties>
+            <Property Name="BorderColor" Value="Gray" />
+            <Property Name="BorderColorGradient" Value="White" />
+            <Property Name="CheckedColor" Value="Cyan" />
+            <Property Name="CheckedColorGradient" Value="Blue" />
+            <Property Name="InnerColor" Value="Silver" />
+          </Properties>
+        </Style>
+      </Styles>
+    </Skin>
+
+    <Skin Name="SolidOrange">
+      <Styles>
+        <Style Name="Formular.Win.UI.Controls.FSharpComboBox" >
+          <Properties>
+          </Properties>
+        </Style>
+        <Style Name="Formular.Win.UI.Controls.FSharpButton" >
+          <Properties>
+            <Property Name="ButtonColor" Value="Orange" />
+            <Property Name="BorderColor" Value="DarkGray" />
+            <Property Name="InnerColor" Value="White" />
+          </Properties>
+        </Style>
+        <Style Name="Formular.Win.UI.Controls.FSharpTextBox" >
+          <Properties>
+            <Property Name="BorderColor" Value="Orange" />
+          </Properties>
+        </Style>
+        <Style Name="Formular.Win.UI.Controls.FSharpCheckBox" >
+          <Properties>
+            <Property Name="BorderColor" Value="Gray" />
+            <Property Name="CheckedColor" Value="OrangeRed" />
+            <Property Name="InnerColor" Value="Silver" />
+          </Properties>
+        </Style>
+        <Style Name="Formular.Win.UI.Controls.FSharpRadioButton" >
+          <Properties>
+            <Property Name="BorderColor" Value="Gray" />
+            <Property Name="CheckedColor" Value="OrangeRed" />
+            <Property Name="InnerColor" Value="Silver" />
+          </Properties>
+        </Style>
+      </Styles>
+    </Skin>
+  </Skins>
+  <Skins>
+
+    <Skin Name="SoftOrange">
+      <Styles>
+        <Style Name="Formular.Win.UI.Controls.FSharpComboBox" >
+          <Properties>
+            <Property Name="BackColor" Value="Orange" />
+            <Property Name="BorderColor" Value="DarkGray" />
+            <Property Name="BorderColorGradient" Value="Gray" />
+          </Properties>
+        </Style>
+        <Style Name="Formular.Win.UI.Controls.FSharpButton" >
+          <Properties>
+            <Property Name="ButtonColor" Value="Orange" />
+            <Property Name="ButtonColorGradient" Value="OrangeRed" />
+            <Property Name="BorderColor" Value="DarkGray" />
+            <Property Name="BorderColorGradient" Value="Gray" />
+            <Property Name="InnerColor" Value="White" />
+          </Properties>
+        </Style>
+        <Style Name="Formular.Win.UI.Controls.FSharpTextBox" >
+          <Properties>
+            <Property Name="BorderColor" Value="DarkOrange" />
+            <Property Name="BorderColorGradient" Value="Orange" />
+          </Properties>
+        </Style>
+        <Style Name="Formular.Win.UI.Controls.FSharpCheckBox" >
+          <Properties>
+            <Property Name="BorderColor" Value="Gray" />
+            <Property Name="BorderColorGradient" Value="LightGray" />
+            <Property Name="CheckedColor" Value="Moccasin" />
+            <Property Name="CheckedColorGradient" Value="OrangeRed" />
+            <Property Name="InnerColor" Value="Silver" />
+          </Properties>
+        </Style>
+        <Style Name="Formular.Win.UI.Controls.FSharpRadioButton" >
+          <Properties>
+            <Property Name="BorderColor" Value="Gray" />
+            <Property Name="BorderColorGradient" Value="White" />
+            <Property Name="CheckedColor" Value="Moccasin" />
+            <Property Name="CheckedColorGradient" Value="OrangeRed" />
+            <Property Name="InnerColor" Value="Silver" />
+          </Properties>
+        </Style>
+        <!--
+        <Style Name="Formular.Win.UI.Controls.FSharpTabControl" >
+          <Properties>
+            <Property Name="Font" Value="Arial, 8pt" />
+          </Properties>
+        </Style>
+        <Style Name="Formular.Win.UI.Controls.FSharpPanel" >
+          <Properties>
+            <Property Name="BackColor" Value="Orange" />
+          </Properties>
+        </Style>
+        -->
+      </Styles>
+    </Skin>
+
+  </Skins>
+</Root>

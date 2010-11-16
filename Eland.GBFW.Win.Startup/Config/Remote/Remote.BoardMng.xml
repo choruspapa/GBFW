@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net" xmlns:r="http://www.springframework.net/remoting" default-lazy-init="true" >
+
+  <object id="NormalBoardService" parent="AbstractRemoteService">
+    <property name="ProxyInterfaces" value="Eland.GBFW.BoardMng.Service.INormalBoardService"/>
+    <property name="Target">
+      <object type="Spring.Remoting.SaoFactoryObject, Spring.Services">
+        <property name="ServiceInterface" value="Eland.GBFW.BoardMng.Service.INormalBoardService, Eland.GBFW.BoardMng.Core" />
+        <property name="ServiceUrl" value="${url}/ArticleService.rem" />
+      </object>
+    </property>
+  </object>
+
+  <object id="BoardMngService" parent="AbstractRemoteService">
+    <property name="ProxyInterfaces" value="Eland.GBFW.BoardMng.Service.IBoardMngService"/>
+    <property name="Target">
+      <object type="Spring.Remoting.SaoFactoryObject, Spring.Services">
+        <property name="ServiceInterface" value="Eland.GBFW.BoardMng.Service.IBoardMngService, Eland.GBFW.BoardMng.Core" />
+        <property name="ServiceUrl" value="${url}/BoardMngService.rem" />
+      </object>
+    </property>
+  </object>
+
+</objects>

@@ -1,0 +1,15 @@
+﻿<SolutionProfile xmlns="http://schemas.microsoft.com/pag/cab-profile/2.0">
+	<Section Name="Modules">
+		<Modules>
+			<ModuleInfo AssemblyFile="Eland.GBFW.Win.Module.UserMng.dll" Name="UserMng"/>
+			<ModuleInfo AssemblyFile="Eland.GBFW.Win.Module.ProgramMng.dll" Name="ProgramMng"/>
+			<ModuleInfo AssemblyFile="Eland.GBFW.Win.Module.AuthorityMng.dll" Name="AuthorityMng"/>
+			<ModuleInfo AssemblyFile="Eland.GBFW.Win.Module.BoardMng.dll" Name="BoardMng"/>
+			<ModuleInfo AssemblyFile="Eland.GBFW.Win.Module.TutorialDevExpress.dll" Name="TutorialDevExpress" />
+			<ModuleInfo AssemblyFile="Eland.GBFW.Win.Module.Tutorial.dll" Name="Tutorial"/>
+			<ModuleInfo AssemblyFile="Eland.GBFW.Win.Module.WebApplication.dll" Name="WebApplication"/>
+            <ModuleInfo AssemblyFile="Eland.GBFW.Win.Module.NormalBoardMng.dll" Name="NormalBoardMng"/>
+		</Modules>
+	</Section>
+</SolutionProfile>
+

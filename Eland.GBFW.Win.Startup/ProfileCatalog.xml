@@ -1,0 +1,20 @@
+﻿<SolutionProfile xmlns="http://schemas.microsoft.com/pag/cab-profile/2.0">
+  <Section Name="Layout">
+    <Modules>
+      <ModuleInfo AssemblyFile="Eland.GBFW.Win.Module.ApplicationMenu.dll"/>
+      <ModuleInfo AssemblyFile="Eland.GBFW.Win.Module.TreeMenu.dll"/>
+  </Modules>
+  </Section>
+  <Section Name="Apps">
+    <Dependencies>
+      <Dependency Name="Layout"/>
+    </Dependencies>
+    <Modules>
+      
+      <ModuleInfo AssemblyFile="Eland.GBFW.Win.Module.RoleMng.dll"/>
+      <ModuleInfo AssemblyFile="Eland.GBFW.Win.Module.AuthorityMng.dll"/>
+        <!--<ModuleInfo AssemblyFile="Eland.GBFW.Win.Module.UserMng.dll"/>-->
+      <ModuleInfo AssemblyFile="Eland.GBFW.Win.Module.TestTool.dll"/>
+    </Modules>
+  </Section>
+</SolutionProfile>

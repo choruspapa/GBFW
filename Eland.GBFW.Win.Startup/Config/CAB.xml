@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects xmlns="http://www.springframework.net" default-lazy-init="true">
+
+  <object id="RootWorkItemService" type="Eland.GBFW.Win.Shell.Services.RootWorkItemService, Eland.GBFW.Win.ShellBase" />
+  
+  <!--Docking Panel Workspace Use-->
+  <object id="ShellImplementor" type=" Formular.Win.Cab.Shell.Builders.DefaultShellImplementor, Formular.Win.Cab.Shell, Version=1.0.2.0, Culture=neutral, PublicKeyToken=a3e20fbe194442ab">
+    <property name="ApplicationMenuPart" value="Deck" />
+    <property name="BusinessMenuPart" value="Dock" />
+    <property name="ContentPart" value="DockTab" />
+    <property name="PopupPart" value="Popup" />
+    <property name="MenuShowStrategy">
+      <object type="Formular.Win.Cab.SmartPartInfos.DockStateShowStrategy, Formular.Win.Cab.Core, Version=1.0.2.0, Culture=neutral, PublicKeyToken=a3e20fbe194442ab">
+        <constructor-arg value="DockLeft" />
+      </object>
+    </property>
+    <property name="ContentShowStrategy">
+      <object type="Formular.Win.Cab.SmartPartInfos.DockStateShowStrategy, Formular.Win.Cab.Core, Version=1.0.2.0, Culture=neutral, PublicKeyToken=a3e20fbe194442ab">
+        <constructor-arg value="Document" />
+      </object>
+    </property>
+  </object>
+
+  <!--DevExpress Workspace Use-->
+  <!--<object id="ShellImplementor" type="Formular.Win.DevExpress.Cab.Extension.XtraShellImplementor, Formular.Win.DevExpress.Cab.Extension, Version=1.0.2.0, Culture=neutral, PublicKeyToken=a3e20fbe194442ab">
+        <property name="ApplicationMenuPart" value="Window" />
+        <property name="BusinessMenuPart" value="Dock" />
+        <property name="ContentPart" value="Tab" />
+        <property name="PopupPart" value="Popup" />
+    </object>-->
+
+	<object id="SoapExceptionHandler" type="Eland.GBFW.Win.Shell.Handler.SoapExceptionHandler, Eland.GBFW.Win.ShellBase">
+		<property name="Order" value="1" />
+		<property name="Enable" value ="true"/>
+	</object>
+	<object id="SystemExceptionHandler" type="Eland.GBFW.Win.Shell.Handler.SystemExceptionHandler, Eland.GBFW.Win.ShellBase">
+		<property name="Order" value="2" />
+		<property name="Enable" value ="true"/>
+	</object>
+
+	<object name="messageSource" type="Spring.Context.Support.ResourceSetMessageSource, Spring.Core">
+		<property name="resourceManagers">
+			<list>
+				<!--<value>Eland.GBFW.Win.Module.ProgramMng.MessageResource, Eland.GBFW.Win.Module.ProgramMng</value>-->
+				<value>Eland.GBFW.CommonResource.MessageResource, Eland.GBFW.CommonResource</value>
+			</list>
+		</property>
+	</object>
+	
+</objects>

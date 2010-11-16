@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net" xmlns:r="http://www.springframework.net/remoting" default-lazy-init="true">
+  <r:configurer />
+  <import resource="assembly://Eland.GBFW.Win.Startup/Eland.GBFW.Win.Startup.Config.Remote/Remote.AuthorityMng.xml"/>
+  <import resource="assembly://Eland.GBFW.Win.Startup/Eland.GBFW.Win.Startup.Config.Remote/Remote.MenuMng.xml"/>
+  <import resource="assembly://Eland.GBFW.Win.Startup/Eland.GBFW.Win.Startup.Config.Remote/Remote.ProgramMng.xml"/>
+  <import resource="assembly://Eland.GBFW.Win.Startup/Eland.GBFW.Win.Startup.Config.Remote/Remote.UserMng.xml"/>
+  <import resource="assembly://Eland.GBFW.Win.Startup/Eland.GBFW.Win.Startup.Config.Remote/Remote.EnvironmentMng.xml"/>
+  <import resource="assembly://Eland.GBFW.Win.Startup/Eland.GBFW.Win.Startup.Config.Remote/Remote.FileAttachMng.xml"/>
+  <import resource="assembly://Eland.GBFW.Win.Startup/Eland.GBFW.Win.Startup.Config.Remote/Remote.BoardMng.xml"/>
+
+  <object id="AbstractRemoteService" abstract="true" type="Spring.Aop.Framework.ProxyFactoryObject, Spring.Aop" >
+    <property name="InterceptorNames">
+      <list>
+        <value>ClientRemoteAdvice</value>
+      </list>
+    </property>
+  </object>
+
+</objects>

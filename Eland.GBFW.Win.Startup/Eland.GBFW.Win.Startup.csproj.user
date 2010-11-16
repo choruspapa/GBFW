@@ -1,0 +1,21 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>http://pcubetest01.home.e-kmall.com:81/eland.gbfw.Win.startup/|\\pcubeweb88\d%24\Projects\Eland.GBFW\src\main\WebSites\Eland.GBFW.Startup\</PublishUrlHistory>
+    <InstallUrlHistory>http://203.234.164.88/Eland.GBFW.Startup/</InstallUrlHistory>
+    <SupportUrlHistory>
+    </SupportUrlHistory>
+    <UpdateUrlHistory>
+    </UpdateUrlHistory>
+    <BootstrapperUrlHistory>
+    </BootstrapperUrlHistory>
+    <ErrorReportUrlHistory>
+    </ErrorReportUrlHistory>
+    <FallbackCulture>ko-KR</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartAction>Project</StartAction>
+    <StartURL>http://203.234.164.88/Eland.GBFW.Startup/Eland.GBFW.Win.Startup.application</StartURL>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects xmlns="http://www.springframework.net" default-lazy-init="true">
+
+	<import resource="assembly://Eland.GBFW.Win.Startup/Eland.GBFW.Win.Startup.Config.WebService/Web.AuthorityMng.xml"/>
+	<import resource="assembly://Eland.GBFW.Win.Startup/Eland.GBFW.Win.Startup.Config.WebService/Web.EnvironmentMng.xml"/>
+	<import resource="assembly://Eland.GBFW.Win.Startup/Eland.GBFW.Win.Startup.Config.WebService/Web.MenuMng.xml"/>
+	<import resource="assembly://Eland.GBFW.Win.Startup/Eland.GBFW.Win.Startup.Config.WebService/Web.ProgramMng.xml"/>
+	<import resource="assembly://Eland.GBFW.Win.Startup/Eland.GBFW.Win.Startup.Config.WebService/Web.UserMng.xml"/>
+	<import resource="assembly://Eland.GBFW.Win.Startup/Eland.GBFW.Win.Startup.Config.WebService/Web.FileAttachMng.xml"/>
+  <import resource="assembly://Eland.GBFW.Win.Startup/Eland.GBFW.Win.Startup.Config.WebService/Web.BoardMng.xml"/>
+  <!--<import resource="assembly://Eland.GBFW.Win.Startup/Eland.GBFW.Win.Startup.Config.WebService/Web.Template.xml"/>-->
+
+	<object id="ClientSoapExceptionAdvisor" type="Spring.Aop.Support.NameMatchMethodPointcutAdvisor, Spring.Aop">
+		<property name="Advice" ref="ClientSoapExceptionAdvice" />
+		<property name="MappedNames">
+			<list>
+				<value>*</value>
+			</list>
+		</property>
+	</object>
+	<object type="Spring.Aop.Framework.AutoProxy.ObjectNameAutoProxyCreator, Spring.Aop">
+		<property name="ObjectNames">
+			<list>
+				<value>*Service</value>
+			</list>
+		</property>
+		<property name="InterceptorNames">
+			<list>
+				<value>ClientSoapExceptionAdvisor</value>
+			</list>
+		</property>
+	</object>
+
+
+</objects>

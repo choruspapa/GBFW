@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <toolstrips>
+        <!--Help site-->
+        <menuitem>
+            <id value="2"/>
+            <site value ="HelpToolBar"/>
+            <iscontainer value="true"/>
+        </menuitem>
+        <!--Main site-->
+        <menuitem>
+            <id value="1"/>
+            <site value ="MainToolbar"/>
+            <iscontainer value="true"/>
+        </menuitem> 
+        <!--Help Button-->    
+        <menuitem>
+            <id value="1"/>
+            <site value="HelpToolBar"/>
+            <label value="Help"/>
+            <commandname value="Help"/>
+            <key value="F10"/>
+            <iscontainer value=""/>
+            <icon value="cmdHelp"/>
+        </menuitem>
+        <!--Search Button-->
+        <menuitem>
+            <id value="2"/>
+            <site value="MainToolbar"/>
+            <label value="Search"/>
+            <commandname value="Search"/>
+            <key value="Alt, F1"/>
+            <iscontainer value=""/>
+            <icon value="cmdSearch"/>
+        </menuitem>
+        <!--Init Button-->
+        <menuitem>
+            <id value="3"/>
+            <site value="MainToolbar"/>
+            <label value="Init"/>
+            <commandname value ="Init"/>
+            <key value="Alt, F2"/>
+            <iscontainer value=""/>
+            <icon value="cmdInit"/>
+        </menuitem>
+        <!--AddRow Button-->
+        <menuitem>
+            <id value="4"/>
+            <site value="MainToolbar"/>
+            <label value="AddRow"/>
+            <commandname value ="AddRow"/>
+            <key value="Alt, F3"/>
+            <icon value="cmdAddRow"/>
+        </menuitem>
+        <!--DeleteRow Button-->
+        <menuitem>
+            <id value="5"/>
+            <site value="MainToolbar"/>
+            <label value="DeleteRow"/>
+            <commandname value ="DeleteRow"/>
+            <key value="Alt, F4"/>
+            <icon value="cmdDeleteRow"/>
+        </menuitem>
+        <!--Cancel Button-->
+        <menuitem>
+            <id value="6"/>
+            <site value="MainToolbar"/>
+            <label value="Cancel"/>
+            <commandname value ="Cancel"/>
+            <key value="Alt, F5"/>
+            <icon value="cmdCancel"/>
+        </menuitem>
+        <!--Confirm Button-->
+        <menuitem>
+            <id value="7"/>
+            <site value="MainToolbar"/>
+            <label value="Confirm"/>
+            <commandname value ="Confirm"/>
+            <key value="Alt, F6"/>
+            <icon value="cmdConfirm"/>
+        </menuitem>
+        <!--Save Button-->
+        <menuitem>
+            <id value="8"/>
+            <site value="MainToolbar"/>
+            <label value="Save"/>
+            <commandname value ="Save"/>
+            <key value="Alt, F7"/>
+            <icon value="cmdSave"/>
+        </menuitem>
+        <!--ExcelExport Button-->
+        <menuitem>
+            <id value="9"/>
+            <site value="MainToolbar"/>
+            <label value="ExcelExport"/>
+            <commandname value ="ExcelExport"/>
+            <key value="Alt, F7"/>
+            <icon value="cmdExcelExport"/>
+        </menuitem>
+        <!--ExcelImport Button-->
+        <menuitem>
+            <id value="10"/>
+            <site value="MainToolbar"/>
+            <label value="ExcelImport"/>
+            <commandname value ="ExcelImport"/>
+            <key value="Alt, F7"/>
+            <icon value="cmdExcelImport"/>
+        </menuitem>
+        <!--Print Button-->
+        <menuitem>
+            <id value="11"/>
+            <site value="MainToolbar"/>
+            <label value="Print"/>
+            <commandname value ="Print"/>
+            <key value="Alt, F7"/>
+            <icon value="cmdPrint"/>
+        </menuitem>
+        <!--Delete Button-->
+        <menuitem>
+            <id value="12"/>
+            <site value="MainToolbar"/>
+            <label value="Delete"/>
+            <commandname value ="Delete"/>
+            <key value="Alt, F7"/>
+            <icon value="cmdDelete"/>
+        </menuitem>
+        <!--Exit Button-->
+        <menuitem>
+            <id value="13"/>
+            <site value="MainToolbar"/>
+            <label value="Exit"/>
+            <commandname value ="Exit"/>
+            <key value="Alt, F7"/>
+            <icon value="cmdExit"/>
+        </menuitem>
+    </toolstrips>
+</configuration>

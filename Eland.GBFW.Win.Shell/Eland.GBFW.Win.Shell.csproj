@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{674BA4E9-FE83-4F2C-ACFE-7CDA42266153}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Eland.GBFW.Win.Shell</RootNamespace>
+    <AssemblyName>Eland.GBFW.Win.Shell</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\bin\main\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\bin\main\release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v9.1, Version=9.1.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v9.1, Version=9.1.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v9.1, Version=9.1.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Eland.GBFW.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c412077ad54fbd48, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\bin\main\Eland.GBFW.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Eland.GBFW.EnvironmentMng.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c412077ad54fbd48, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\bin\main\Eland.GBFW.EnvironmentMng.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Eland.GBFW.MenuMng.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c412077ad54fbd48, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\bin\main\Eland.GBFW.MenuMng.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Eland.GBFW.ProgramMng.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c412077ad54fbd48, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\bin\main\Eland.GBFW.ProgramMng.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Eland.GBFW.UserMng.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c412077ad54fbd48, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\bin\main\Eland.GBFW.UserMng.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Eland.GBFW.Win.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c412077ad54fbd48, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\bin\main\Eland.GBFW.Win.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Eland.GBFW.Win.ShellBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c412077ad54fbd48, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\bin\main\Eland.GBFW.Win.ShellBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Formular.Support.Extension, Version=1.0.2.0, Culture=neutral, PublicKeyToken=a3e20fbe194442ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Formular30\Formular.Support.Extension.dll</HintPath>
+    </Reference>
+    <Reference Include="Formular.Common, Version=1.0.2.0, Culture=neutral, PublicKeyToken=a3e20fbe194442ab">
+      <HintPath>..\..\..\..\lib\Formular30\Formular.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Formular.Win.Cab.Controls, Version=1.0.2.0, Culture=neutral, PublicKeyToken=a3e20fbe194442ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Formular30\Formular.Win.Cab.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Formular.Win.Cab.Core, Version=1.0.2.0, Culture=neutral, PublicKeyToken=a3e20fbe194442ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Formular30\Formular.Win.Cab.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Formular.Win.Cab.Shell, Version=1.0.2.0, Culture=neutral, PublicKeyToken=a3e20fbe194442ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Formular30\Formular.Win.Cab.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="Formular.Win.UI, Version=1.0.2.0, Culture=neutral, PublicKeyToken=a3e20fbe194442ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Formular30\Formular.Win.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Formular.Win.UI.Controls, Version=1.0.2.0, Culture=neutral, PublicKeyToken=a3e20fbe194442ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Formular30\Formular.Win.UI.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="GBFWSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\GBFWSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI, Version=1.0.51205.0, Culture=neutral, PublicKeyToken=a3e20fbe194442ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Cab\Microsoft.Practices.CompositeUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI.WinForms, Version=1.0.51205.0, Culture=neutral, PublicKeyToken=a3e20fbe194442ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Cab\Microsoft.Practices.CompositeUI.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51206.0, Culture=neutral, PublicKeyToken=a3e20fbe194442ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Cab\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Aop, Version=1.2.0.20313, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Spring12\Spring.Aop.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core, Version=1.2.0.20313, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Spring12\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <!--<Reference Include="Eland.GBFW.Win.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6e5173db9b08e694, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\debug\Eland.GBFW.Win.Common.dll</HintPath>
+    </Reference>-->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyInfo.cs" />
+    <Compile Include="Layout\DefaultShellXtraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\DefaultShellXtraForm.Designer.cs">
+      <DependentUpon>DefaultShellXtraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\LoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\LoadingForm.Designer.cs">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\ShellForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\ShellForm.Designer.cs">
+      <DependentUpon>ShellForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\ShellFormPresenter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ShellApplication.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Layout\DefaultShellXtraForm.resx">
+      <DependentUpon>DefaultShellXtraForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\ShellForm.resx">
+      <DependentUpon>ShellForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <!--<ItemGroup>
+    <ProjectReference Include="..\Eland.GBFW.Win.Common.Util\Eland.GBFW.Win.Common.Util.csproj">
+      <Project>{A311F055-156F-4807-B087-7F86308E7DD8}</Project>
+      <Name>Eland.GBFW.Win.Common.Util</Name>
+    </ProjectReference>
+  </ItemGroup>-->
+  <ItemGroup>
+    <None Include="Resources\imgExcelImport.png" />
+    <None Include="Resources\imgExcelExport.png" />
+    <None Include="Resources\imgPowerOff.png" />
+    <None Include="Resources\insert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgAddRow.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgCancel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgConfirm.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgDelete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgDeleteRow.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgExtendAction.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgHelp.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgInit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgNew.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgPrint.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgRun.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSave.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSearch.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgAddFavorite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON_bar1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON_bar2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON_bar.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetFileName)" "$(TargetDir).."</PostBuildEvent>
+  </PropertyGroup>
+</Project>

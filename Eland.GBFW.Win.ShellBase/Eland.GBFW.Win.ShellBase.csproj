@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3CC4B194-B540-4BB2-A106-80FDC95A8E3A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Eland.GBFW.Win.ShellBase</RootNamespace>
+    <AssemblyName>Eland.GBFW.Win.ShellBase</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\bin\main\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\bin\main\release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Eland.GBFW.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c412077ad54fbd48, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\bin\main\Eland.GBFW.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Eland.GBFW.EnvironmentMng.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c412077ad54fbd48, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\bin\main\Eland.GBFW.EnvironmentMng.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Eland.GBFW.ProgramMng.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c412077ad54fbd48, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\bin\main\Eland.GBFW.ProgramMng.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Eland.GBFW.Win.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c412077ad54fbd48, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\bin\main\Eland.GBFW.Win.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Formular.Common, Version=1.0.2.0, Culture=neutral, PublicKeyToken=a3e20fbe194442ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Formular30\Formular.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Formular.Support.Extension, Version=1.0.2.0, Culture=neutral, PublicKeyToken=a3e20fbe194442ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Formular30\Formular.Support.Extension.dll</HintPath>
+    </Reference>
+    <Reference Include="Formular.Win.Cab.Controls, Version=1.0.2.0, Culture=neutral, PublicKeyToken=a3e20fbe194442ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Formular30\Formular.Win.Cab.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Formular.Win.Cab.Core, Version=1.0.2.0, Culture=neutral, PublicKeyToken=a3e20fbe194442ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Formular30\Formular.Win.Cab.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Formular.Win.Cab.Shell, Version=1.0.2.0, Culture=neutral, PublicKeyToken=a3e20fbe194442ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Formular30\Formular.Win.Cab.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.CompositeUI, Version=1.0.51205.0, Culture=neutral, PublicKeyToken=a3e20fbe194442ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Cab\Microsoft.Practices.CompositeUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51206.0, Culture=neutral, PublicKeyToken=a3e20fbe194442ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Cab\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Aop, Version=1.2.0.20313, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Spring12\Spring.Aop.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core, Version=1.2.0.20313, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Spring12\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Advice\ClientRemoteAdvice.cs" />
+    <Compile Include="Advice\ClientSoapExtension.cs" />
+    <Compile Include="Advice\ClientSoapExceptionAdvice.cs" />
+    <Compile Include="Entities\MenuItemElement.cs" />
+    <Compile Include="Handler\SystemExceptionHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CommandButtonService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\CultureService.cs" />
+    <Compile Include="Services\HeaderService.cs" />
+    <Compile Include="Services\LauncherService.cs" />
+    <Compile Include="Services\RootWorkItemService.cs" />
+    <Compile Include="Handler\SoapExceptionHandler.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetFileName)" "$(TargetDir).."</PostBuildEvent>
+  </PropertyGroup>
+</Project>

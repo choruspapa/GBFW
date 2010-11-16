@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net" default-lazy-init="true">
+	<object id="FileAttachmentService" type="Spring.Web.Services.WebServiceProxyFactory, Spring.Services">
+        <property name="ServiceUri" value="http://pcubetest01.home.e-kmall.com:81/Eland.GBFW.Web/FileAttachmentWebService.asmx"/>
+		<property name="ServiceInterface" value="Eland.GBFW.FileAttachMng.Service.IFileAttachmentService, Eland.GBFW.FileAttachMng.Core"/>
+	</object>
+
+    <!--<object id="FileAttachmentService" type="Spring.Web.Services.WebServiceProxyFactory, Spring.Services">
+        <property name="ServiceUri" value="${url}/FileAttachmentWebService.asmx"/>
+        <property name="ServiceInterface" value="Eland.GBFW.FileAttachMng.Service.IFileAttachmentService, Eland.GBFW.FileAttachMng.Core"/>
+    </object>-->
+</objects>
